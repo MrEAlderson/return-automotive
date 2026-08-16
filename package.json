@@ -1,0 +1,21 @@
+{
+  "name": "Tset-agent",
+  "version": "1.0.0",
+  "description": "Frida agent written in TypeScript",
+  "private": true,
+  "main": "agent/index.ts",
+  "type": "module",
+  "scripts": {
+    "spawn": "frida -U -f com.android.car.media -l _agent.js",
+    "prepare": "npm run build",
+    "build": "frida-compile agent/index.js -o _agent.js -c",
+    "watch": "frida-compile agent/index.js -o _agent.js -w"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "^19.0.0",
+    "@types/node": "^18.14.0"
+  },
+  "dependencies": {
+    "frida-java-bridge": "^7.0.13"
+  }
+}
