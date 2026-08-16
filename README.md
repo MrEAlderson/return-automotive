@@ -1,4 +1,4 @@
-<video src="recording.webm" width="320" height="240" controls></video>
+<video src="Recording.mp4" width="320" height="240" controls></video>
 Run Automotive OS apps on a regular Android. Goal: Benefit from simplified UIs, use any device as a head unit within your car.
 
 ## Status
